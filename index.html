@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+         
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-image: url(./sky-bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: sans-serif;
+        }
+        /* Style for Top Layer */
+        #top{
+            display: flex;
+            justify-content: flex-end;
+            margin: 20px 20px 0px 0px;
+            color: white;
+            font-size:15px;
+        }
+        #top div{
+            padding-right: 20px;
+        }
+        #top div a{
+            text-decoration: none;
+            color: white;
+        }
+        .topsym{
+            font-size:19px;
+        }
+        /* Style end for Top Layer */
+        /* Style for mid Layer */
+        #mid{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+        }
+        .h1{
+            color: white;
+            font-size: 40px;
+            margin-bottom: 40px;
+        }
+
+        .input{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 60px;
+            margin-top: 10px;
+        }
+        /* Style for Search Tab */
+        .inp{
+            height: 46px;
+            width: 520px;
+            padding-left: 45px;
+            border-radius: 30px;
+            font-size: 16px;
+            border: none;
+            position:absolute;
+        }
+        .icons{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .search{
+            position: relative;
+            top: 13px;
+            right: 230px;
+        }
+        .mic-cam{
+            position: relative;
+            top: 15px;
+            left: 230px;
+        }
+        .mic{
+            padding-right: 10px;
+        } 
+
+        /* Style end for Search tab */
+
+        .plus{
+            height: 48px;
+            width: 48px;
+            background-color: white;
+            border-radius: 50%;
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            
+        }
+        .h5{
+            color: white;
+            padding-top: 20px;
+        }
+        #bottom{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin: 30px;
+        }
+        .link,.pencil{
+            color: #ffffff;
+            font-size: 14px;
+           
+        }
+        .link i{
+            padding-right: 3px;
+        }
+        .link span a{
+            color: white;
+            font-size: 14px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="top">
+        <div><a href="#">Gmail</a></div>
+        <div><a href="#">Images</a></div>
+        <div><i class="fa-solid fa-flask topsym"></i></div>
+        <div><i class="fa-solid fa-bars topsym"></i></div>
+        <div><i class="fa-solid fa-user topsym"></i></div>
+    </div>
+    <div id="mid">
+        <div class="h1"><h1>Google</h1></div>
+        <div class="input">
+            <input type="text" placeholder="Search Google or type a URL" class="inp"/>
+            <div class="icons">
+                <i class="fa-solid fa-magnifying-glass search"></i>
+                <div class="mic-cam">
+                    <i class="fa-solid fa-microphone mic"></i>
+                    <i class="fa-solid fa-camera cam"></i>
+                </div>
+            </div>
+        </div>
+        <div class="plus">+</div>
+        <h5 class="h5">Add Shortcut</h5>
+    </div>
+    <div id="bottom">
+        <div class="link">
+            <i class="fa-solid fa-link"></i>
+            <span><a href="#">Photo by Ev Tchebotarev</a></span>
+        </div>
+        <div class="pencil">
+            <i class="fa-solid fa-pencil"></i>
+        </div>
+    </div>
+</body>
+</html>
